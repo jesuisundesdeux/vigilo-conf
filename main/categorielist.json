@@ -1,0 +1,80 @@
+[
+   {
+      "catcolor":"paleturquoise",
+      "catid":8,
+      "catname":"Absence d'aménagement",
+      "catname_en_US":"Missing of bicycle or pedestrian way"
+   },
+   {
+      "catcolor":"seagreen",
+      "catid":3,
+      "catname":"Aménagement mal conçu",
+      "catname_en_US":"Bad designed way"
+   },
+   {
+      "catcolor":"darkgreen",
+      "catid":4,
+      "catname":"Défaut d'entretien",
+      "catname_en_US":"Maintenance issue"
+   },
+   {
+      "catcolor":"turquoise",
+      "catid":5,
+      "catname":"Absence d'arceaux de stationnement",
+      "catname_en_US":"Missing bicycle parking"
+   },
+   {
+      "catcolor":"crimson",
+      "catid":2,
+      "catname":"Véhicule ou objet gênant",
+      "catname_en_US":"Annoying vehicle or object"
+   },
+   {
+      "catcolor":"black",
+      "catid":9,
+      "catname":"Accident, chute, incident",
+      "catname_en_US":"Accident, incident or drop "
+   },
+   {
+      "catcolor":"yellowgreen",
+      "catid":6,
+      "catname":"Signalisation, marquage",
+      "catname_en_US":"Traffic sign or labeling"
+   },
+   {
+      "catcolor":"lightcoral",
+      "catid":7,
+      "catname":"Incivilité récurrente sur la route",
+      "catname_en_US":"Antisocial behaviour on the road"
+   },
+   {
+      "catcolor":"blue",
+      "catid":10,
+      "catname":"Vol ou dégradation de vélo",
+      "catname_en_US":"Bike theft or vandalism"
+   },
+   {
+      "catcolor":"grey",
+      "catid":100,
+      "catname":"Autre",
+      "catname_en_US":"Other"
+   },
+   {
+      "catcolor":"orange",
+      "catdisable":true,
+      "catid":50,
+      "catname":"COVID - Distanciation physique impossible"
+   },
+   {
+      "catcolor":"red",
+      "catdisable":true,
+      "catid":51,
+      "catname":"COVID - Aménagement fermé"
+   },
+   {
+      "catcolor":"green",
+      "catdisable":true,
+      "catid":52,
+      "catname":"COVID - Voirie en période de confinement"
+   }
+]
