@@ -1,0 +1,242 @@
+{
+   "Aix Marseille Provence Metropole":{
+      "api_path":"https://vigilo.velosenville.org",
+      "country":"France",
+      "prod":true,
+      "scope":"13_aixmarseillemetro"
+   },
+   "Amiens":{
+      "api_path":"https://velo.varas-genestier.net",
+      "country":"France",
+      "prod":true,
+      "scope":"80_amiens"
+   },
+   "Arras":{
+      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "country":"France",
+      "prod":false,
+      "scope":"62_arras"
+   },
+   "Avignon":{
+      "api_path":"https://test.grantime.fr/app/",
+      "country":"France",
+      "prod":false,
+      "scope":"84_Avignon"
+   },
+   "Bassin Arcachon Sud":{
+      "api_path":"https://vigilo.velobassin.org",
+      "country":"France",
+      "prod":true,
+      "scope":"33_arcachon"
+   },
+   "Beauvais":{
+      "api_path":"https://vigilo.vellovaque.fr",
+      "country":"France",
+      "prod":true,
+      "scope":"60_beauvaisis"
+   },
+   "Bordeaux Metropole":{
+      "api_path":"https://vigilobx33.go.yj.fr/vigilobx33",
+      "country":"France",
+      "prod":false,
+      "scope":"33_bordeaux"
+   },
+   "Bourges (beta)":{
+      "api_path":"https://vigilobourges.000webhostapp.com",
+      "country":"France",
+      "prod":false,
+      "scope":"18_bourges"
+   },
+   "Brest":{
+      "api_path":"https://vigilo.bapav.org",
+      "country":"France",
+      "prod":true,
+      "scope":"29_brest"
+   },
+   "Caen (beta)":{
+      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "country":"France",
+      "prod":false,
+      "scope":"14_caen"
+   },
+   "Calais (beta)":{
+      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "country":"France",
+      "prod":false,
+      "scope":"62_calais"
+   },
+   "Clermont Auvergne Métropole (beta)":{
+      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "country":"France",
+      "prod":false,
+      "scope":"63_clermont"
+   },
+   "Grand Annecy":{
+      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "country":"France",
+      "prod":false,
+      "scope":"74_annecy"
+   },
+   "Haut Doubs et Grand Pontarlier":{
+      "api_path":"http://hautdoubsetgrandpontarlie.fub-00.vigilo.city/",
+      "country":"France",
+      "prod":false,
+      "scope":"25_hautdoubsetgrandpontarlie"
+   },
+   "Isère (APIE)":{
+      "api_path":"https://vigilo.apie-asso.net",
+      "country":"France",
+      "prod":true,
+      "scope":"38_capi"
+   },
+   "La Rochelle (beta)":{
+      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "country":"France",
+      "prod":false,
+      "scope":"17_larochelle"
+   },
+   "Metz (beta)":{
+      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "country":"France",
+      "prod":false,
+      "scope":"57_metz"
+   },
+   "Mons (Be)":{
+      "api_path":"https://vigilo.geckonline.be",
+      "country":"Belgique",
+      "prod":true,
+      "scope":"be_mons"
+   },
+   "Montpellier":{
+      "api_path":"https://api-vigilo.jesuisundesdeux.org",
+      "country":"France",
+      "prod":true,
+      "scope":"34_montpellier"
+   },
+   "Nantes Métropole":{
+      "api_path":"https://vigilo.placeauvelo-nantes.fr/",
+      "country":"France",
+      "prod":true,
+      "scope":"44_nantesmetropole"
+   },
+   "Niort":{
+      "api_path":"https://vigilo.villovelo.org/",
+      "country":"France",
+      "prod":false,
+      "scope":"79_Niort"
+   },
+   "Orléans Métropole":{
+      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "country":"France",
+      "prod":false,
+      "scope":"45_orleans"
+   },
+   "Paris-Saclay":{
+      "api_path":"https://api.vigilo-parissaclay.mdb-idf.org/",
+      "country":"France",
+      "prod":true,
+      "scope":"91_parissaclay"
+   },
+   "Perpignan Roussillon":{
+      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "country":"France",
+      "prod":false,
+      "scope":"66_perpignan"
+   },
+   "Périgueux Agglo":{
+      "api_path":"https://vigilo.velorution-perigourdine.fr",
+      "country":"France",
+      "prod":true,
+      "scope":"24_AggloPgx"
+   },
+   "Rennes":{
+      "api_path":"https://vigilo-beta.jesuisundesdeux.org/",
+      "country":"France",
+      "prod":false,
+      "scope":"35_rennes"
+   },
+   "Rouen (beta)":{
+      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "country":"France",
+      "prod":false,
+      "scope":"76_rouen"
+   },
+   "Saint Marcellin Vercors Isère":{
+      "api_path":"https://vigilo.roulavelo.org",
+      "country":"France",
+      "prod":true,
+      "scope":"38_SMVIC"
+   },
+   "Saint-Brieuc Armor Agglomération":{
+      "api_path":"https://api-vigilo.velo-utile.fr",
+      "country":"France",
+      "prod":true,
+      "scope":"22_SBAA"
+   },
+   "Strasbourg":{
+      "api_path":"https://strasbourgavelo.eu",
+      "country":"France",
+      "prod":true,
+      "scope":"67_strasbourg"
+   },
+   "Strasbourg (beta)":{
+      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "country":"France",
+      "prod":false,
+      "scope":"67_strasbourg"
+   },
+   "Sud Oise":{
+      "api_path":"https://vigilo.au5v.fr/",
+      "country":"France",
+      "prod":true,
+      "scope":"60_SudOise"
+   },
+   "Sète Thau":{
+      "api_path":"https://sete34.vigilo.city/",
+      "country":"France",
+      "prod":true,
+      "scope":"34_setethau"
+   },
+   "Test FUB":{
+      "api_path":"http://vigilo-fub-test01.vigilo.city",
+      "country":"France",
+      "prod":false,
+      "scope":"xx_fub"
+   },
+   "Tours Métropole Val de Loire":{
+      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "country":"France",
+      "prod":false,
+      "scope":"37_tours"
+   },
+   "Troyes Agglomération":{
+      "api_path":"https://api.vigilo.troyesenselle.fr",
+      "country":"France",
+      "prod":true,
+      "scope":"10_troyes"
+   },
+   "Valence & co":{
+      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "country":"France",
+      "prod":false,
+      "scope":"26_valence"
+   },
+   "Vallée Sud Grand Paris":{
+      "api_path":"https://api.vigilo.velosudgrandparis.fr",
+      "country":"France",
+      "prod":false,
+      "scope":"92_valleesud"
+   },
+   "Vannes Agglo":{
+      "api_path":"https://vigilo.kaz.bzh",
+      "country":"France",
+      "prod":true,
+      "scope":"56_vannes"
+   },
+   "kentiss34 (uat)":{
+      "api_path":"https://vigilo-uat-kentiss34.my-heb.eu",
+      "country":"France",
+      "prod":false,
+      "scope":"00_test"
+   }
+}
