@@ -41,7 +41,7 @@
       "prod":false,
       "scope":"33_bordeaux"
    },
-   "Bourges (beta)":{
+   "Bourges (betat)":{
       "api_path":"https://vigilobourges.000webhostapp.com",
       "country":"France",
       "prod":false,
@@ -53,7 +53,7 @@
       "prod":true,
       "scope":"29_brest"
    },
-   "Caen (betat)":{
+   "Caen (beta)":{
       "api_path":"https://vigilo-beta.jesuisundesdeux.org",
       "country":"France",
       "prod":false,
@@ -201,7 +201,7 @@
       "api_path":"http://vigilo-fub-test01.vigilo.city",
       "country":"France",
       "prod":false,
-      "scope":"xx_fub"
+      "scope":"00_fub"
    },
    "Tours Métropole Val de Loire":{
       "api_path":"https://vigilo-beta.jesuisundesdeux.org",

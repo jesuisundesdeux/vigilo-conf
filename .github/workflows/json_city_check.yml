@@ -1,9 +1,13 @@
-name: Validate JSONs
+name: Validate City List JSONs
 
-on: [pull_request]
+on: 
+  pull_request:
+    paths:
+      - '/main/citylist.schema.json'
+      - '/main/citylist.json'
 
 jobs:
-  verify-json-validation:
+  verify-city-json-validation:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -12,3 +16,4 @@ jobs:
         env:
           INPUT_SCHEMA: /main/citylist.schema.json
           INPUT_JSONS: /main/citylist.json
+
