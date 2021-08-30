@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "patternProperties":{
+     "^[a-zA-Z0-9- ]*$": {
+      "required": [ "api_path", "prod", "scope" ],
+      "properties": {
+         "api_path": { "type": "string" },
+         "country": { "type": "string" },
+         "prod": { "type": "boolean" },
+         "scope" : { "type": "string", "pattern": "^[0-9]{2}_[a-z]*" }
+      }
+    }
+  }    
+}
