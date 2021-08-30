@@ -1,0 +1,11 @@
+{
+  "type": "array",
+  "required": [ "catcolor", "catid", "catname", "catname_en_US" ],
+  "properties": {   
+     "catcolor": { "type": "string" },
+     "catid": { "type": "number" },
+     "catname": { "type": "string" },
+     "catname_en_US":  { "type": "string" }
+  }
+}
+
