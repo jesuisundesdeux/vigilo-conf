@@ -1,6 +1,12 @@
 [
    {
       "catcolor":"paleturquoise",
+      "catid":85,
+      "catname":"Absence d'aménagement",
+      "catname_edn_US":"Missing of bicycle or pedestrian way"
+   },
+   {
+      "catcolor":"paleturquoise",
       "catid":8,
       "catname":"Absence d'aménagement",
       "catname_en_US":"Missing of bicycle or pedestrian way"
