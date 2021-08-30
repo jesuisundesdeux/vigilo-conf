@@ -63,18 +63,21 @@
       "catcolor":"orange",
       "catdisable":true,
       "catid":50,
-      "catname":"COVID - Distanciation physique impossible"
+      "catname":"COVID - Distanciation physique impossible",
+      "catname_en_US": "COVID - Impossible physical distancing"
    },
    {
       "catcolor":"red",
       "catdisable":true,
       "catid":51,
-      "catname":"COVID - Aménagement fermé"
+      "catname":"COVID - Aménagement fermé",
+      "catname_en_US": "COVID - Closed cycle way"
    },
    {
       "catcolor":"green",
       "catdisable":true,
       "catid":52,
-      "catname":"COVID - Voirie en période de confinement"
+      "catname":"COVID - Voirie en période de confinement",
+      "catname_en_US": "COVID - Street during lockdown"
    }
 ]

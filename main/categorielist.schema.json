@@ -1,11 +1,71 @@
 {
-  "type": "array",
-  "required": [ "catcolor", "catid", "catname", "catname_en_US" ],
-  "properties": {   
-     "catcolor": { "type": "string" },
-     "catid": { "type": "number" },
-     "catname": { "type": "string" },
-     "catname_en_US":  { "type": "string" }
-  }
-}
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1630338487.json", 
+	"title": "Root", 
+	"type": "array",
+	"default": [],
+	"items":{
+		"$id": "#root/items", 
+		"title": "Items", 
+		"type": "object",
+		"required": [
+			"catcolor",
+			"catid",
+			"catname",
+			"catname_en_US"
+		],
+		"properties": {
+			"catcolor": {
+				"$id": "#root/items/catcolor", 
+				"title": "Catcolor", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"seagreen"
+				],
+				"pattern": "^.*$"
+			},
+			"catid": {
+				"$id": "#root/items/catid", 
+				"title": "Catid", 
+				"type": "integer",
+				"examples": [
+					3
+				],
+				"default": 0
+			},
+			"catname": {
+				"$id": "#root/items/catname", 
+				"title": "Catname", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"Aménagement mal conçu"
+				],
+				"pattern": "^.*$"
+			},
+			"catname_en_US": {
+				"$id": "#root/items/catname_en_US", 
+				"title": "Catname_en_us", 
+				"type": "string",
+				"default": "",
+				"examples": [
+					"Bad designed way"
+				],
+				"pattern": "^.*$"
+			},
+            "catdisable": {
+				"$id": "#root/items/catname_en_US", 
+				"title": "catdisable", 
+				"type": "boolean",
+				"default": "",
+				"examples": [
+					true
+				],
+				"pattern": "^.*$"
+			}
+		}
+	}
 
+}
