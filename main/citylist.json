@@ -201,7 +201,7 @@
       "api_path":"http://vigilo-fub-test01.vigilo.city",
       "country":"France",
       "prod":false,
-      "scope":"xx_fub"
+      "scope":"00_fub"
    },
    "Tours Métropole Val de Loire":{
       "api_path":"https://vigilo-beta.jesuisundesdeux.org",
