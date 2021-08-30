@@ -3,8 +3,7 @@ name: Validate Category JSONs
 on: 
   pull_request:
     paths:
-      - '/main/categorielist.schema.json'
-      - '/main/categorielist.json'
+      - 'main/*.json'
 
 jobs:
   verify-categories-json-validation:

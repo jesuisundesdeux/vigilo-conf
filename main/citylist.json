@@ -41,7 +41,7 @@
       "prod":false,
       "scope":"33_bordeaux"
    },
-   "Bourges (betat)":{
+   "Bourges (beta)":{
       "api_path":"https://vigilobourges.000webhostapp.com",
       "country":"France",
       "prod":false,
