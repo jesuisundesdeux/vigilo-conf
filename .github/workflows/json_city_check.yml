@@ -3,8 +3,8 @@ name: Validate City List JSONs
 on: 
   pull_request:
     paths:
-      - '/main/citylist.schema.json'
-      - '/main/citylist.json'
+      - 'main/citylist.schema.json'
+      - 'main/citylist.json'
 
 jobs:
   verify-city-json-validation:
