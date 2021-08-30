@@ -53,7 +53,7 @@
       "prod":true,
       "scope":"29_brest"
    },
-   "Caen (betat)":{
+   "Caen (beta)":{
       "api_path":"https://vigilo-beta.jesuisundesdeux.org",
       "country":"France",
       "prod":false,
