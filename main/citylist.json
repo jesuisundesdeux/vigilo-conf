@@ -35,12 +35,6 @@
       "prod":true,
       "scope":"60_beauvaisis"
    },
-   "Bordeaux Metropole":{
-      "api_path":"https://vigilobx33.go.yj.fr/vigilobx33",
-      "country":"France",
-      "prod":false,
-      "scope":"33_bordeaux"
-   },
    "Bourges (beta)":{
       "api_path":"https://vigilobourges.000webhostapp.com",
       "country":"France",
@@ -238,5 +232,12 @@
       "country":"France",
       "prod":false,
       "scope":"00_test"
+   },
+   "Bordeaux Métropole":{
+      "api_path":"https://vigilo.cycles-manivelles.org/api",
+      "country":"France",
+      "prod":true,
+      "scope":"33_bordeaux"
    }
+
 }
