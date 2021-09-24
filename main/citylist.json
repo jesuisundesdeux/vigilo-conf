@@ -170,7 +170,7 @@
    "Strasbourg":{
       "api_path":"https://strasbourgavelo.eu",
       "country":"France",
-      "prod":true,
+      "prod":false,
       "scope":"67_strasbourg"
    },
    "Strasbourg (beta)":{
