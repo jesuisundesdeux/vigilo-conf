@@ -173,12 +173,6 @@
       "prod":false,
       "scope":"67_strasbourg"
    },
-   "Strasbourg (beta)":{
-      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
-      "country":"France",
-      "prod":false,
-      "scope":"67_strasbourg"
-   },
    "Sud Oise":{
       "api_path":"https://vigilo.au5v.fr/",
       "country":"France",
