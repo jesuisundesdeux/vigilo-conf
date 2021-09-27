@@ -168,7 +168,7 @@
       "scope":"22_SBAA"
    },
    "Strasbourg":{
-      "api_path":"https://strasbourgavelo.eu",
+      "api_path":"https://www.strasbourgavelo.eu",
       "country":"France",
       "prod":false,
       "scope":"67_strasbourg"
