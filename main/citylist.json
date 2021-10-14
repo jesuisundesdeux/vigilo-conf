@@ -170,7 +170,7 @@
    "Strasbourg":{
       "api_path":"https://www.strasbourgavelo.eu",
       "country":"France",
-      "prod":false,
+      "prod":true,
       "scope":"67_strasbourg"
    },
    "Sud Oise":{
