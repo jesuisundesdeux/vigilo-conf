@@ -233,7 +233,7 @@
       "prod":true,
       "scope":"33_bordeaux"
    }
-   "Châteaugiron (Pays de) ":{
+   "Châteaugiron (Pays de)":{
       "api_path":"https://pouliquen.net/vigilo",
       "country":"France",
       "prod":true,
