@@ -83,10 +83,10 @@
       "prod":true,
       "scope":"38_capi"
    },
-   "La Rochelle (beta)":{
-      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+   "La Rochelle":{
+      "api_path":"https://vigilo-lr.corolo.fr",
       "country":"France",
-      "prod":false,
+      "prod":true,
       "scope":"17_larochelle"
    },
    "Metz (beta)":{
