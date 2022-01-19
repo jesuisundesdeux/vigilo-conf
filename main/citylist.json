@@ -8,7 +8,7 @@
    "Amiens":{
       "api_path":"https://velo.varas-genestier.net",
       "country":"France",
-      "prod":true,
+      "prod":false,
       "scope":"80_amiens"
    },
    "Arras":{
