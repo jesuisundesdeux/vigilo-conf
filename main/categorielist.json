@@ -48,6 +48,12 @@
       "catname_en_US":"Antisocial behaviour on the road"
    },
    {
+      "catcolor":"black",
+      "catid":11,
+      "catname":"Eclairage public insuffisant",
+      "catname_en_US":"Insufficient public lighting"
+   },
+   {
       "catcolor":"blue",
       "catid":10,
       "catname":"Vol ou dégradation de vélo",
