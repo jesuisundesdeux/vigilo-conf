@@ -185,12 +185,6 @@
       "prod":true,
       "scope":"34_setethau"
    },
-   "Test FUB":{
-      "api_path":"http://vigilo-fub-test01.vigilo.city",
-      "country":"France",
-      "prod":false,
-      "scope":"00_fub"
-   },
    "Tours Métropole Val de Loire":{
       "api_path":"https://vigilo-beta.jesuisundesdeux.org",
       "country":"France",
@@ -220,12 +214,6 @@
       "country":"France",
       "prod":true,
       "scope":"56_vannes"
-   },
-   "kentiss34 (uat)":{
-      "api_path":"https://vigilo-uat-kentiss34.my-heb.eu",
-      "country":"France",
-      "prod":false,
-      "scope":"00_test"
    },
    "Bordeaux Métropole":{
       "api_path":"https://vigilo.cycles-manivelles.org/api",
