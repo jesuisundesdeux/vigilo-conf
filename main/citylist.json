@@ -71,6 +71,12 @@
       "prod":false,
       "scope":"74_annecy"
    },
+   "Grand Nancy":{
+      "api_path":"https://vigilo.rigelk.org",
+      "country":"France",
+      "prod":true,
+      "scope":"54_grandnancy"
+   },
    "Haut Doubs et Grand Pontarlier":{
       "api_path":"http://hautdoubsetgrandpontarlie.fub-00.vigilo.city/",
       "country":"France",
