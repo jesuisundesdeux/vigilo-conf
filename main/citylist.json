@@ -72,7 +72,7 @@
       "scope":"74_annecy"
    },
    "Grand Nancy":{
-      "api_path":"https://vigilo.rigelk.org",
+      "api_path":"https://vigilo.rigelk.eu",
       "country":"France",
       "prod":true,
       "scope":"54_grandnancy"
