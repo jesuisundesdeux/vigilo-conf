@@ -36,7 +36,7 @@
       "scope":"60_beauvaisis"
    },
    "Bourges (beta)":{
-      "api_path":"https://vigilobourges.000webhostapp.com",
+      "api_path":"https://vigilo.webbanana.fr",
       "country":"France",
       "prod":false,
       "scope":"18_bourges"
