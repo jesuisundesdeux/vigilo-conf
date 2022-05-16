@@ -186,7 +186,7 @@
       "scope":"60_SudOise"
    },
    "Sète Thau":{
-      "api_path":"https://sete34.vigilo.city/",
+      "api_path":"https://prod-sete.vigilo.velocite-montpellier.fr",
       "country":"France",
       "prod":true,
       "scope":"34_setethau"
