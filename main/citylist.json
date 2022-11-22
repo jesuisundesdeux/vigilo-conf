@@ -65,6 +65,12 @@
       "prod":false,
       "scope":"63_clermont"
    },
+   "Evreux (beta)":{
+      "api_path":"https://www.vigilo.cube27.org",
+      "country":"France",
+      "prod":false,
+      "scope":"27_evreux"
+   },
    "Grand Annecy":{
       "api_path":"https://vigilo-beta.jesuisundesdeux.org",
       "country":"France",
