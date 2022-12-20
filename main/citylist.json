@@ -68,7 +68,7 @@
    "Evreux (beta)":{
       "api_path":"https://www.vigilo.cube27.org",
       "country":"France",
-      "prod":false,
+      "prod":true,
       "scope":"27_evreux"
    },
    "Grand Annecy":{
