@@ -65,7 +65,7 @@
       "prod":false,
       "scope":"63_clermont"
    },
-   "Evreux (beta)":{
+   "Evreux":{
       "api_path":"https://www.vigilo.cube27.org",
       "country":"France",
       "prod":true,
