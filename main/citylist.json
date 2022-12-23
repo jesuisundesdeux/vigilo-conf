@@ -65,6 +65,12 @@
       "prod":false,
       "scope":"63_clermont"
    },
+   "Le Cotentin Agglomération":{
+      "api_path":"https://vigilo.velorution-cherbourg.fr",
+      "country":"France",
+      "prod":true,
+      "scope":"50_cotentin"
+   },
    "Evreux":{
       "api_path":"https://www.vigilo.cube27.org",
       "country":"France",
