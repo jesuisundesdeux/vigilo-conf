@@ -107,6 +107,12 @@
       "prod":true,
       "scope":"17_larochelle"
    },
+   "Lorient Agglomération":{
+      "api_path":"https://vigilo.claav.fr",
+      "country":"France",
+      "prod":true,
+      "scope":"56_lorient"
+   },
    "Metz (beta)":{
       "api_path":"https://vigilo-beta.jesuisundesdeux.org",
       "country":"France",
