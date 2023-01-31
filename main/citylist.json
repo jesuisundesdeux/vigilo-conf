@@ -18,7 +18,7 @@
       "scope":"74_annemasse"
    },
    "Arras":{
-      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "api_path":"https://pp-mtp.vigilo.velocite-montpellier.fr",
       "country":"France",
       "prod":false,
       "scope":"62_arras"
@@ -54,19 +54,19 @@
       "scope":"29_brest"
    },
    "Caen (beta)":{
-      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "api_path":"https://pp-mtp.vigilo.velocite-montpellier.fr",
       "country":"France",
       "prod":false,
       "scope":"14_caen"
    },
    "Calais (beta)":{
-      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "api_path":"https://pp-mtp.vigilo.velocite-montpellier.fr",
       "country":"France",
       "prod":false,
       "scope":"62_calais"
    },
    "Clermont Auvergne Métropole (beta)":{
-      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "api_path":"https://pp-mtp.vigilo.velocite-montpellier.fr",
       "country":"France",
       "prod":false,
       "scope":"63_clermont"
@@ -84,7 +84,7 @@
       "scope":"27_evreux"
    },
    "Grand Annecy":{
-      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "api_path":"https://pp-mtp.vigilo.velocite-montpellier.fr",
       "country":"France",
       "prod":false,
       "scope":"74_annecy"
@@ -120,7 +120,7 @@
       "scope":"56_lorient"
    },
    "Metz (beta)":{
-      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "api_path":"https://pp-mtp.vigilo.velocite-montpellier.fr",
       "country":"France",
       "prod":false,
       "scope":"57_metz"
@@ -150,7 +150,7 @@
       "scope":"79_Niort"
    },
    "Orléans Métropole":{
-      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "api_path":"https://pp-mtp.vigilo.velocite-montpellier.fr",
       "country":"France",
       "prod":false,
       "scope":"45_orleans"
@@ -162,7 +162,7 @@
       "scope":"91_parissaclay"
    },
    "Perpignan Roussillon":{
-      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "api_path":"https://pp-mtp.vigilo.velocite-montpellier.fr",
       "country":"France",
       "prod":false,
       "scope":"66_perpignan"
@@ -174,13 +174,13 @@
       "scope":"24_AggloPgx"
    },
    "Rennes":{
-      "api_path":"https://vigilo-beta.jesuisundesdeux.org/",
+      "api_path":"https://pp-mtp.vigilo.velocite-montpellier.fr",
       "country":"France",
       "prod":false,
       "scope":"35_rennes"
    },
    "Rouen (beta)":{
-      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "api_path":"https://pp-mtp.vigilo.velocite-montpellier.fr",
       "country":"France",
       "prod":false,
       "scope":"76_rouen"
@@ -216,7 +216,7 @@
       "scope":"34_setethau"
    },
    "Tours Métropole Val de Loire":{
-      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "api_path":"https://pp-mtp.vigilo.velocite-montpellier.fr",
       "country":"France",
       "prod":false,
       "scope":"37_tours"
@@ -228,7 +228,7 @@
       "scope":"10_troyes"
    },
    "Valence & co":{
-      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "api_path":"https://pp-mtp.vigilo.velocite-montpellier.fr",
       "country":"France",
       "prod":false,
       "scope":"26_valence"
