@@ -11,6 +11,12 @@
       "prod":true,
       "scope":"80_amiens"
    },
+   "Annemasse Agglo (beta)":{
+      "api_path":"https://vigilo-beta.jesuisundesdeux.org",
+      "country":"France",
+      "prod":true,
+      "scope":"74_annemasse"
+   },
    "Arras":{
       "api_path":"https://vigilo-beta.jesuisundesdeux.org",
       "country":"France",
