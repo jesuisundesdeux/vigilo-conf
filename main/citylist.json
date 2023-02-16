@@ -197,6 +197,12 @@
       "prod":true,
       "scope":"22_SBAA"
    },
+   "Saint-Lô Agglo":{
+      "api_path":"https://vigilio.assovelo.fr",
+      "country":"France",
+      "prod":true,
+      "scope":"50_saintloagglo"
+   },
    "Strasbourg":{
       "api_path":"https://www.strasbourgavelo.eu",
       "country":"France",
