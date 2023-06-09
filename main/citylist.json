@@ -173,6 +173,12 @@
       "prod":true,
       "scope":"24_AggloPgx"
    },
+   "Quimper Communauté":{
+      "api_path":"https://vigilo.kernavelo.org",
+      "country":"France",
+      "prod":true,
+      "scope":"29_quimper"
+   },
    "Rennes":{
       "api_path":"https://pp-mtp.vigilo.velocite-montpellier.fr",
       "country":"France",
