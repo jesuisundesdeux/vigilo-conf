@@ -77,6 +77,12 @@
       "prod":true,
       "scope":"50_cotentin"
    },
+   "Evian-les-Bains":{
+      "api_path":"https://www.modouce.fr/vigilo",
+      "country":"France",
+      "prod":true,
+      "scope":"74_Evian"
+   },
    "Evreux":{
       "api_path":"https://www.vigilo.cube27.org",
       "country":"France",
