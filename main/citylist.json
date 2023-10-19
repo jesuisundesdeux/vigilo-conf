@@ -119,6 +119,12 @@
       "prod":true,
       "scope":"17_larochelle"
    },
+   "Libournais":{
+     "api_path": "https://florgz.com/vigilo/",
+      "country": "France",
+      "prod": true,
+      "scope": 33_libournais
+   },
    "Lorient Agglomération":{
       "api_path":"https://vigilo.claav.fr",
       "country":"France",
