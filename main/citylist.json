@@ -155,6 +155,12 @@
       "prod":true,
       "scope":"44_nantesmetropole"
    },
+   "Métropole Nice Côte d'Azur":{
+      "api_path":"https://vigiloniceavelo.fr/",
+      "country":"France",
+      "prod":true,
+      "scope":"06_METROPOLENCA"
+    },
    "Niort":{
       "api_path":"https://vigilo.villovelo.org/",
       "country":"France",
