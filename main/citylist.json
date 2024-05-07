@@ -131,6 +131,12 @@
       "prod":true,
       "scope":"56_lorient"
    },
+   "Lozère (beta)":{
+      "api_path":"https://pp-mtp.vigilo.velocite-montpellier.fr",
+      "country":"France",
+      "prod":false,
+      "scope":"48_lozere"
+   },
    "Metz (beta)":{
       "api_path":"https://pp-mtp.vigilo.velocite-montpellier.fr",
       "country":"France",
