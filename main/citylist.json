@@ -251,10 +251,10 @@
       "prod":true,
       "scope":"34_setethau"
    },
-   "Métropole Toulon Provence Méditerranée (beta)":{
+   "Toulon Var":{
       "api_path":"https://vigilo.toulon-var-deplacements.fr",
       "country":"France",
-      "prod":false,
+      "prod":true,
       "scope":"83_toulon"
    },
    "Tours Métropole Val de Loire":{
