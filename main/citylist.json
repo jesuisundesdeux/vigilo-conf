@@ -71,6 +71,12 @@
       "prod":false,
       "scope":"63_clermont"
    },
+   "Colmar (beta)":{
+      "api_path":"https://pp-mtp.vigilo.velocite-montpellier.fr",
+      "country":"France",
+      "prod":false,
+      "scope":"68_colmar"
+   },
    "Le Cotentin Agglomération":{
       "api_path":"https://vigilo.velorution-cherbourg.fr",
       "country":"France",
