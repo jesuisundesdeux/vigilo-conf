@@ -158,7 +158,7 @@
    "Montpellier":{
       "api_path":"https://api-vigilo.jesuisundesdeux.org",
       "country":"France",
-      "prod":true,
+      "prod":false,
       "scope":"34_montpellier"
    },
    "Nantes Métropole":{
