@@ -108,9 +108,9 @@
       "scope":"be_mons"
    },
    "Montpellier":{
-      "api_path":"https://api-vigilo.jesuisundesdeux.org",
+      "api_path":"https://prod-mtp.vigilo.velocite-montpellier.fr",
       "country":"France",
-      "prod":false,
+      "prod":true,
       "scope":"34_montpellier"
    },
    "Nantes Métropole":{
