@@ -90,7 +90,7 @@
       "scope":"17_larochelle"
    },
    "Laval Agglomération":{
-     "api_path": "https://igilo.placeauvelo.org",
+      "api_path": "https://vigilo.placeauvelo.org",
       "country": "France",
       "prod": true,
       "scope": "53_laval"
