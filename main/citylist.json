@@ -89,6 +89,12 @@
       "prod":true,
       "scope":"17_larochelle"
    },
+   "Laval Agglomération":{
+     "api_path": "https://igilo.placeauvelo.org",
+      "country": "France",
+      "prod": true,
+      "scope": "53_laval"
+   },
    "Libournais":{
      "api_path": "https://florgz.com/vigilo/",
       "country": "France",
