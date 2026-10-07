@@ -9,9 +9,11 @@ date of the latest observation (activity indicator only).
 Writes a Markdown report (GitHub step summary when available) and exits with 1
 when at least one instance is down.
 """
+import concurrent.futures
 import datetime
 import json
 import os
+import ssl
 import sys
 import time
 import urllib.error
@@ -22,12 +24,12 @@ TIMEOUT = 20
 TRIES = 3
 
 
-def fetch_json(url):
+def fetch_json(url, context=None):
     last_error = None
     for attempt in range(TRIES):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": "vigilo-conf instance check"})
-            with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
+            with urllib.request.urlopen(req, timeout=TIMEOUT, context=context) as resp:
                 body = resp.read().decode("utf-8", "replace")
             try:
                 return json.loads(body)
@@ -56,6 +58,13 @@ def check(name, conf):
     except RuntimeError as e:
         result["ok"] = False
         result["error"] = str(e)
+        if "CERTIFICATE_VERIFY_FAILED" in str(e):
+            # browsers refuse it too, but tell whether the API still answers behind it
+            try:
+                fetch_json("%s/get_scope.php?scope=%s" % (base, scope), ssl._create_unverified_context())
+                result["error"] += " (the API answers without certificate check: fix the certificate)"
+            except RuntimeError as e2:
+                result["error"] += " (no API behind either: %s)" % e2
         return result
     try:
         issues = fetch_json("%s/get_issues.php?scope=%s&count=1" % (base, scope))
@@ -71,7 +80,8 @@ def check(name, conf):
 def main():
     with open(CITYLIST, encoding="utf-8") as f:
         cities = json.load(f)
-    results = [check(name, conf) for name, conf in cities.items()]
+    with concurrent.futures.ThreadPoolExecutor(max_workers=12) as pool:
+        results = list(pool.map(lambda item: check(*item), cities.items()))
     down = [r for r in results if not r["ok"]]
 
     lines = ["## Vigilo instances: %d OK, %d down" % (len(results) - len(down), len(down)), "",
