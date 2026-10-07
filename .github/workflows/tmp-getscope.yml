@@ -1,0 +1,16 @@
+name: Temporary get_scope
+on:
+  push:
+    branches: [claude/deeper-check]
+    paths: ['.github/workflows/tmp-getscope.yml']
+jobs:
+  scope:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get_scope Aix Marseille
+        run: |
+          curl -sS -i --max-time 30 -H "Origin: https://app.vigilo.city" "https://vigilo.velosenville.org/get_scope.php?scope=13_aixmarseillemetro"
+          echo; echo "---- get_photo (one token) ----"
+          curl -sS -i --max-time 30 "https://vigilo.velosenville.org/get_photo.php?token=EE147987" | head -c 1500
+          echo; echo "---- generate_panel (same token) ----"
+          curl -sS -o /dev/null -w "HTTP %{http_code} %{content_type} %{size_download} bytes\n" --max-time 30 "https://vigilo.velosenville.org/generate_panel.php?s=150&token=EE147987"
