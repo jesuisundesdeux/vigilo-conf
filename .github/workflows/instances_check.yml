@@ -1,0 +1,29 @@
+name: Check instances
+
+# Checks that every instance of main/citylist.json answers (report in the run summary)
+on:
+  push:
+    paths:
+      - 'main/citylist.json'
+      - '.github/scripts/check_instances.py'
+      - '.github/workflows/instances_check.yml'
+  pull_request:
+    paths:
+      - 'main/citylist.json'
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Check instances
+        run: python3 .github/scripts/check_instances.py

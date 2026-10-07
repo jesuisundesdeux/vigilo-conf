@@ -1,0 +1,178 @@
+{
+   "Amiens":{
+      "api_path":"https://velo.varas-genestier.net",
+      "country":"France",
+      "prod":true,
+      "scope":"80_amiens",
+      "hs_since":"2026-10-07",
+      "hs_reason":"domaine inexistant (DNS)"
+   },
+   "Avignon":{
+      "api_path":"https://test.grantime.fr/app/",
+      "country":"France",
+      "prod":false,
+      "scope":"84_Avignon",
+      "hs_since":"2026-10-07",
+      "hs_reason":"certificat HTTPS invalide (nom d'hôte) et pas d'API derrière (HTTP 503)"
+   },
+   "Bassin Arcachon Sud":{
+      "api_path":"https://vigilo.velobassin.org",
+      "country":"France",
+      "prod":true,
+      "scope":"33_arcachon",
+      "hs_since":"2026-10-07",
+      "hs_reason":"domaine inexistant (DNS)"
+   },
+   "Beauvais":{
+      "api_path":"https://vigilo.vellovaque.fr",
+      "country":"France",
+      "prod":true,
+      "scope":"60_beauvaisis",
+      "hs_since":"2026-10-07",
+      "hs_reason":"le serveur répond mais l'API Vigilo n'existe plus (HTTP 404)"
+   },
+   "Bourges (beta)":{
+      "api_path":"https://vigilo.webbanana.fr",
+      "country":"France",
+      "prod":false,
+      "scope":"18_bourges",
+      "hs_since":"2026-10-07",
+      "hs_reason":"domaine inexistant (DNS)"
+   },
+   "Brest":{
+      "api_path":"https://vigilo.bapav.org",
+      "country":"France",
+      "prod":true,
+      "scope":"29_brest",
+      "hs_since":"2026-10-07",
+      "hs_reason":"certificat HTTPS expiré (l'API répond derrière : à réactiver une fois le certificat renouvelé)"
+   },
+   "Colmar et environs":{
+      "api_path":"https://www.vigilo.cadrescolmar.org",
+      "country":"France",
+      "prod":true,
+      "scope":"68_colmarenvirons",
+      "hs_since":"2026-10-07",
+      "hs_reason":"certificat HTTPS invalide pour ce nom d'hôte (l'API répond derrière : à réactiver une fois le certificat corrigé)"
+   },
+   "Le Cotentin Agglomération":{
+      "api_path":"https://vigilo.velorution-cherbourg.fr",
+      "country":"France",
+      "prod":true,
+      "scope":"50_cotentin",
+      "hs_since":"2026-10-07",
+      "hs_reason":"domaine inexistant (DNS)"
+   },
+   "Grand Nancy":{
+      "api_path":"https://vigilo.rigelk.eu",
+      "country":"France",
+      "prod":true,
+      "scope":"54_grandnancy",
+      "hs_since":"2026-10-07",
+      "hs_reason":"certificat HTTPS auto-signé et pas d'API derrière (HTTP 404)"
+   },
+   "Isère (APIE)":{
+      "api_path":"https://vigilo.apie-asso.net",
+      "country":"France",
+      "prod":true,
+      "scope":"38_capi",
+      "hs_since":"2026-10-07",
+      "hs_reason":"certificat HTTPS invalide (nom d'hôte) et pas d'API derrière (HTTP 404)"
+   },
+   "La Rochelle":{
+      "api_path":"https://vigilo-lr.corolo.fr",
+      "country":"France",
+      "prod":true,
+      "scope":"17_larochelle",
+      "hs_since":"2026-10-07",
+      "hs_reason":"domaine inexistant (DNS)"
+   },
+   "Libournais":{
+      "api_path":"https://florgz.com/vigilo/",
+      "country":"France",
+      "prod":true,
+      "scope":"33_libournais",
+      "hs_since":"2026-10-07",
+      "hs_reason":"serveur en erreur (HTTP 503)"
+   },
+   "Mons (Be)":{
+      "api_path":"https://vigilo.geckonline.be",
+      "country":"Belgique",
+      "prod":true,
+      "scope":"be_mons",
+      "hs_since":"2026-10-07",
+      "hs_reason":"domaine inexistant (DNS)"
+   },
+   "Métropole Nice Côte d'Azur":{
+      "api_path":"https://vigiloniceavelo.fr/",
+      "country":"France",
+      "prod":true,
+      "scope":"06_METROPOLENCA",
+      "hs_since":"2026-10-07",
+      "hs_reason":"domaine inexistant (DNS)"
+   },
+   "Saint Marcellin Vercors Isère":{
+      "api_path":"https://vigilo.roulavelo.org",
+      "country":"France",
+      "prod":true,
+      "scope":"38_SMVIC",
+      "hs_since":"2026-10-07",
+      "hs_reason":"le serveur ferme la connexion sans répondre"
+   },
+   "Saint-Lô Agglo":{
+      "api_path":"https://vigilio.assovelo.fr",
+      "country":"France",
+      "prod":true,
+      "scope":"50_saintloagglo",
+      "hs_since":"2026-10-07",
+      "hs_reason":"domaine inexistant (DNS)"
+   },
+   "Strasbourg":{
+      "api_path":"https://www.strasbourgavelo.eu",
+      "country":"France",
+      "prod":true,
+      "scope":"67_strasbourg",
+      "hs_since":"2026-10-07",
+      "hs_reason":"le domaine sert un autre site (pas d'API Vigilo)"
+   },
+   "Sud Oise":{
+      "api_path":"https://vigilo.au5v.fr/",
+      "country":"France",
+      "prod":true,
+      "scope":"60_SudOise",
+      "hs_since":"2026-10-07",
+      "hs_reason":"domaine inexistant (DNS)"
+   },
+   "Sète Thau":{
+      "api_path":"https://prod-sete.vigilo.velocite-montpellier.fr",
+      "country":"France",
+      "prod":false,
+      "scope":"34_setethau",
+      "hs_since":"2026-10-07",
+      "hs_reason":"serveur en erreur (HTTP 502)"
+   },
+   "Troyes Agglomération":{
+      "api_path":"https://api.vigilo.troyesenselle.fr",
+      "country":"France",
+      "prod":true,
+      "scope":"10_troyes",
+      "hs_since":"2026-10-07",
+      "hs_reason":"domaine inexistant (DNS)"
+   },
+   "Vallée Sud Grand Paris":{
+      "api_path":"https://api.vigilo.velosudgrandparis.fr",
+      "country":"France",
+      "prod":false,
+      "scope":"92_valleesud",
+      "hs_since":"2026-10-07",
+      "hs_reason":"domaine inexistant (DNS)"
+   },
+   "Bordeaux Métropole":{
+      "api_path":"https://vigilo.cycles-manivelles.org/api",
+      "country":"France",
+      "prod":true,
+      "scope":"33_bordeaux",
+      "hs_since":"2026-10-07",
+      "hs_reason":"certificat HTTPS auto-signé et pas d'API derrière (HTTP 404)"
+   }
+}
