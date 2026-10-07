@@ -1,0 +1,29 @@
+name: Temporary 500 diagnostic
+on:
+  push:
+    branches: [claude/diag-500]
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Error bodies
+        run: |
+          for api in "https://vigilo.kernavelo.org|29_quimper" "https://api-vigilo.velo-utile.fr|22_SBAA" "https://vigilo.velosenville.org|13_aixmarseillemetro"; do
+            base=${api%%|*}; scope=${api##*|}
+            echo "=================== $base"
+            tokens=$(curl -sS --max-time 30 "$base/get_issues.php?scope=$scope&count=3" | python3 -c "import json,sys; print(' '.join(i['token']+':'+str(i['categorie'])+':'+str(i['approved']) for i in json.load(sys.stdin)))")
+            echo "latest tokens (token:category:approved): $tokens"
+            for t in $tokens; do
+              tok=${t%%:*}
+              echo "--- generate_panel s=150 $tok"
+              curl -sS --max-time 30 -o /tmp/p -D /tmp/h "$base/generate_panel.php?s=150&token=$tok"; head -1 /tmp/h; grep -i "content-type\|backend" /tmp/h; file /tmp/p; head -c 400 /tmp/p | strings | head -5
+              echo "--- get_photo $tok"
+              curl -sS --max-time 30 -o /tmp/p -D /tmp/h "$base/get_photo.php?token=$tok"; head -1 /tmp/h; file /tmp/p; head -c 400 /tmp/p | strings | head -5
+              echo "--- images/$tok.jpg (direct)"
+              curl -sS --max-time 30 -o /tmp/p -D /tmp/h "$base/images/$tok.jpg"; head -1 /tmp/h; file /tmp/p
+            done
+            echo "--- get_version / headers"
+            curl -sS -D - --max-time 20 -o /dev/null "$base/get_version.php" | grep -i "server\|x-powered\|backend"
+            echo "--- admin and install exposed?"
+            for p in admin/login.php install.php caches/ maps/ images/ config/config.php; do echo "$p $(curl -sS -o /dev/null -w '%{http_code}' --max-time 20 "$base/$p")"; done
+          done
