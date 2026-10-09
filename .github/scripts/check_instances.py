@@ -144,6 +144,13 @@ def main():
     if summary:
         with open(summary, "a", encoding="utf-8") as f:
             f.write(report)
+    payload = {
+        "date": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "summary": {"total": len(results), "ok": len(results) - len(down), "down": len(down)},
+        "instances": results,
+    }
+    with open("check_result.json", "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
     return 1 if down else 0
 
 
