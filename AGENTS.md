@@ -40,10 +40,20 @@ Une modification fusionnée sur `main` est donc **immédiatement en production**
 - `json_city_check.yml`, `json_category_check.yml` : validation des JSON par leurs schémas à chaque push.
 - `instances_check.yml` : interroge chaque instance de `citylist.json` (`get_scope.php`, `get_issues.php`) à chaque
   modification, chaque lundi et à la demande ; échoue si une instance ne répond pas (la déplacer alors dans
-  `citylist-hs.json`).
+  `citylist-hs.json`). Crée une release GitHub `check-instance-<DATE>` contenant `check_result.json` (date UTC, bilan ok/down,
+  détail par instance) lors d'un push sur les fichiers surveillés, du planning hebdomadaire ou d'un déclenchement
+  manuel. La dernière release est accessible via
+  `GET /repos/jesuisundesdeux/vigilo-conf/releases/latest`.
 
 En local :
 
 ```sh
 python3 -c "import json; [json.load(open(f)) for f in ['main/citylist.json','main/citylist-hs.json','main/categorielist.json']]"
+```
+
+Pour tester le check des instances et inspecter le JSON produit :
+
+```sh
+python3 .github/scripts/check_instances.py
+python3 -c "import json; d=json.load(open('check_result.json')); print(d['date'], d['summary'])"
 ```
