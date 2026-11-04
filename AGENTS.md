@@ -44,6 +44,11 @@ Une modification fusionnée sur `main` est donc **immédiatement en production**
   détail par instance) lors d'un push sur les fichiers surveillés, du planning hebdomadaire ou d'un déclenchement
   manuel. La dernière release est accessible via
   `GET /repos/jesuisundesdeux/vigilo-conf/releases/latest`.
+- `retry_instances.yml` (`.github/scripts/retry_instances.py`) : opération inverse, lancée **à la demande**
+  (`workflow_dispatch`). Réessaie chaque instance de `citylist-hs.json` (même contrôle que `check_instances.py`,
+  fonction `check()` réutilisée) et, pour celles redevenues joignables, retire `hs_since`/`hs_reason` et les déplace
+  dans `citylist.json` via une **pull request** (relecture avant mise en production). N'ouvre une PR que si au moins une
+  instance est revenue.
 
 En local :
 
@@ -56,4 +61,12 @@ Pour tester le check des instances et inspecter le JSON produit :
 ```sh
 python3 .github/scripts/check_instances.py
 python3 -c "import json; d=json.load(open('check_result.json')); print(d['date'], d['summary'])"
+python3 .github/scripts/retry_instances.py   # réessai des instances HS (modifie les JSON si des instances reviennent)
 ```
+
+## Skills Claude Code
+
+`.claude/skills/` fournit deux slash-commands pour piloter ces workflows depuis une session :
+
+- `refresh-instances` : déclenche `instances_check.yml` et rapporte le bilan ok/down.
+- `retry-instances` : déclenche `retry_instances.yml` et rapporte la PR de remontée (ou l'absence d'instance revenue).
