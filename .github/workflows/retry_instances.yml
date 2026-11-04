@@ -1,0 +1,48 @@
+name: Retry instances
+
+# Réessaie les instances de main/citylist-hs.json et, pour celles redevenues
+# joignables, ouvre une PR qui les remonte dans main/citylist.json.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  retry:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Retry instances
+        id: retry
+        run: python3 .github/scripts/retry_instances.py
+      - name: Open pull request
+        if: steps.retry.outputs.moved == '1'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NAMES: ${{ steps.retry.outputs.names }}
+        run: |
+          BRANCH="retry-instances-$(date -u +%Y-%m-%d)-${{ github.run_id }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add main/citylist.json main/citylist-hs.json
+          git commit -m "Remonte les instances redevenues joignables dans citylist.json" \
+                     -m "Instances : $NAMES"
+          git push -u origin "$BRANCH"
+          {
+            echo "Instances HS redevenues joignables, déplacées de \`citylist-hs.json\` vers \`citylist.json\` : $NAMES."
+            echo
+            echo "Généré par le workflow « Retry instances » (déclenché manuellement). À relire avant fusion : une fusion sur \`main\` est immédiatement en production pour tous les clients Vigilo."
+            echo
+            echo "Note : une PR créée avec \`GITHUB_TOKEN\` ne redéclenche pas automatiquement les workflows de vérification (\`json_city_check\`, \`instances_check\`) ; relancez-les depuis l'onglet Actions si besoin."
+          } > pr_body.md
+          gh pr create \
+            --title "Remontée d'instances redevenues joignables" \
+            --body-file pr_body.md \
+            --base main \
+            --head "$BRANCH"
